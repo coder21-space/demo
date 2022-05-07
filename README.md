@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### render same component multiple path in react router v6
+
+
+<Routes>
+          {["/Dashboard1", "/Dashboard2","/Dashboard3"].map((path) => (
+            <Route path={path} element={Dashboard} />
+          ))}
+        </Routes>
+
+### multiple sets of Routes  define 404 in react v6
